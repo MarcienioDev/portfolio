@@ -10,8 +10,7 @@ export default function NavMenu() {
       textColor: "#fff",
       links: [
         { label: "Quem sou", href: "/about/me", ariaLabel: "Sobre mim" },
-        { label: "Carreira", href: "/about/career", ariaLabel: "Minha carreira" },
-        { label: "Skills", href: "/about/skills", ariaLabel: "Minhas Skills" }
+        { label: "Tecnologias", href: "/about/skills", ariaLabel: "Minhas Tecnologias" }
       ]
     },
     {
