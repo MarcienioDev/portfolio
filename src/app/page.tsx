@@ -1,9 +1,13 @@
-import NavMenu from "./components/navMenu";
+import AboutMe from "./components/aboutMe";
+import BgMario from "./components/bgMario";
+import Main from "./components/main";
 
 export default function Home() {
   return (
     <>
-      <NavMenu />
+      <BgMario />
+      <Main />
+      <AboutMe />
     </>
   );
 }
