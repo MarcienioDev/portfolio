@@ -15,7 +15,7 @@ export default function MyTech (){
     ];
     
     return (
-        <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}} className='bg-white pt-20 text-primary'>
+        <div style={{ height: '400px', position: 'relative', overflow: 'hidden'}} className='bg-white pt-20 text-primary'>
         <h1 className='flex justify-center text-4xl font-extrabold'>Minhas tecnologias</h1>
         <LogoLoop
             logos={techLogos}
