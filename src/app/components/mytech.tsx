@@ -1,7 +1,7 @@
 "use client"
 
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql } from 'react-icons/si';
-import { FaNode } from "react-icons/fa";
+import { FaNode, FaJs } from "react-icons/fa";
 import LogoLoop from './LogoLoop';
 
 export default function MyTech (){
@@ -12,6 +12,7 @@ export default function MyTech (){
         { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
         { node: <FaNode />, title: "Node.js", href: "https://nodejs.org" },
         { node: <SiPostgresql />, title: "Postgresql", href: "https://www.postgresql.org" },
+        { node: <FaJs />, title: "JavaScript", href: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" },
     ];
     
     return (
