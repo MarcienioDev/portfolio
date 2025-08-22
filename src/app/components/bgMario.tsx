@@ -12,6 +12,7 @@ export default function bgMario() {
       style={{
         objectFit: 'cover',
       }}
+      unoptimized
     />
   )
 }
