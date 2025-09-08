@@ -1,17 +1,18 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa"
-import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si"
+import Image from "next/image";
+import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+import { JSX } from "react";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  imageUrl: string
-  projectUrl: string
-  tags?: string[]
+  title: string;
+  description: string;
+  imageUrl: string;
+  projectUrl: string;
+  tags?: string[];
 }
 
 const techConfig: Record<
@@ -25,7 +26,7 @@ const techConfig: Record<
   typescript: { color: "bg-blue-700 text-white", icon: <SiTypescript /> },
   react: { color: "bg-cyan-500 text-white", icon: <FaReact /> },
   tailwind: { color: "bg-sky-400 text-white", icon: <SiTailwindcss /> },
-}
+};
 
 export function ProjectCard({
   title,
@@ -35,7 +36,8 @@ export function ProjectCard({
   tags = [],
 }: ProjectCardProps) {
   return (
-    <Card className="w-full max-w-sm overflow-hidden shadow-2xl rounded-2xl hover:shadow-primary/40 hover:scale-[1.02] transition-all duration-300">
+    <Card className="w-full max-w-sm overflow-hidden rounded-2xl shadow-lg hover:shadow-primary/40 hover:scale-[1.02] transition-transform duration-300">
+      {/* Conteúdo principal */}
       <CardContent className="flex flex-col items-center gap-4 p-4">
         {/* Imagem */}
         <Image
@@ -59,8 +61,8 @@ export function ProjectCard({
         {/* Tags */}
         <div className="flex flex-wrap justify-center gap-2 mt-3">
           {tags.map((tag, index) => {
-            const lowerTag = tag.toLowerCase()
-            const tech = techConfig[lowerTag]
+            const lowerTag = tag.toLowerCase();
+            const tech = techConfig[lowerTag];
             return (
               <span
                 key={index}
@@ -71,13 +73,13 @@ export function ProjectCard({
                 {tech?.icon && <span className="text-lg">{tech.icon}</span>}
                 {tag}
               </span>
-            )
+            );
           })}
         </div>
       </CardContent>
 
       {/* Botão */}
-      <CardFooter className="px-5 py-2">
+      <CardFooter className="px-5 pb-4">
         <Button
           asChild
           className="w-full bg-primary text-white hover:scale-105 transition-transform"
@@ -88,5 +90,5 @@ export function ProjectCard({
         </Button>
       </CardFooter>
     </Card>
-  )
+  );
 }
