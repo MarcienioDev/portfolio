@@ -5,7 +5,7 @@ import CardProfile from "./cardProfile";
 
 export default function Main() {
   return (
-    <main className="flex flex-col md:flex-row items-center justify-between h-screen text-white px-12 gap-6">    
+    <main className="flex flex-col md:flex-row items-center justify-between h-screen text-white px-30 gap-6">    
       {/* Texto de apresentação */}
       <div className="flex-1 flex flex-col justify-center md:justify-start">
         <TextType 
