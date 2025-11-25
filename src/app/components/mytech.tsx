@@ -50,7 +50,7 @@ export default function MyTech() {
   ];
 
   return (
-    <section className="bg-white py-20 text-primary">
+    <section className="bg-white py-20 text-primary" id="tech">
       <h1 className="text-center text-4xl font-extrabold">
         Minhas Tecnologias
       </h1>

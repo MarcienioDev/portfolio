@@ -2,7 +2,7 @@ import { ProjectCard } from "./cardProjects"
 
 export default function Projects() {
   return (
-    <section className="bg-primary flex flex-col justify-center items-center p-20">
+    <section className="bg-primary flex flex-col justify-center items-center p-20" id="projects">
       <div>
         <h1 className="text-4xl font-extrabold text-white">Meus projetos</h1>
       </div>
@@ -30,7 +30,14 @@ export default function Projects() {
           title="FIPIA"
           imageUrl="/assets/fipia.png"
           description="Projeto criado para uma amostra de profissões em uma escola de ensino médio, a FIPIA é uma IA que faz uma entrevista com os alunos e dá uma resposta baseada nas perguntas, que vocação ela tem."
-          projectUrl="https://github.com/MarcienioDev/chatbot-fip-facul"
+          projectUrl="https://chatbot-fipia.vercel.app"
+          tags={["NEXTJS", "TYPESCRIPT", "TAILWIND"]}
+        />
+        <ProjectCard
+          title="Alerta Elas"
+          imageUrl="/assets/alertaelas.png"
+          description="Projeto criado para compartilhar informações por meio de um quiz, com o objetivo de conscientizar sobre a importância do combate à violência contra a mulher."
+          projectUrl="https://www.alertaelas.com.br"
           tags={["NEXTJS", "TYPESCRIPT", "TAILWIND"]}
         />
       </div>

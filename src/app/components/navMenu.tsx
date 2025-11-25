@@ -6,28 +6,28 @@ export default function NavMenu() {
   const items = [
     {
       label: "Sobre mim",
-      bgColor: "#0D0716",
+      bgColor: "",
       textColor: "#fff",
       links: [
-        { label: "Quem sou", href: "/about/me", ariaLabel: "Sobre mim" },
-        { label: "Tecnologias", href: "/about/skills", ariaLabel: "Minhas Tecnologias" }
+        { label: "Quem sou", href: "#about", ariaLabel: "Sobre mim" },
+        { label: "Tecnologias", href: "#tech", ariaLabel: "Minhas Tecnologias" }
       ]
     },
     {
       label: "Projetos",
-      bgColor: "#0D0716",
+      bgColor: "",
       textColor: "#fff",
       links: [
-        { label: "Meus Projetos", href: "/projects/all", ariaLabel: "meus projetos" },
+        { label: "Meus Projetos", href: "#projects", ariaLabel: "meus projetos" },
       ]
     },
     {
       label: "Contato",
-      bgColor: "#0D0716",
+      bgColor: "",
       textColor: "#fff",
       links: [
-        { label: "Email", href: "mailto:marcienio@example.com", ariaLabel: "Me envie um email" },
-        { label: "LinkedIn", href: "https://linkedin.com/in/marcienio", ariaLabel: "Meu LinkedIn" },
+        { label: "Email", href: "mailto:dinizmarcienio@gmail.com", ariaLabel: "Me envie um email" },
+        { label: "LinkedIn", href: "https://linkedin.com/in/marcieniodiniz", ariaLabel: "Meu LinkedIn" },
         { label: "GitHub", href: "https://github.com/MarcienioDev", ariaLabel: "Meu GitHub" }
       ]
     }
@@ -40,7 +40,7 @@ export default function NavMenu() {
       items={items}
       baseColor="#1649ff"
       menuColor="#fff"
-      buttonBgColor="#111"
+      buttonBgColor="#fff"
       buttonTextColor="#fff"
       ease="power3.out"
     />

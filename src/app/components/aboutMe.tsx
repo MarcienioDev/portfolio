@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <section className="px-8 py-20 bg-primary flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
+    <section id="about" className="px-8 py-20 bg-primary flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
   <div className="flex justify-center">
     <Image
       src="/assets/ProfilePic.png"
