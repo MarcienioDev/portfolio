@@ -6,6 +6,8 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiPostgresql,
+  SiPython,
+  SiFlask,
 } from "react-icons/si";
 import { FaNode, FaJs } from "react-icons/fa";
 import LogoLoop from "./LogoLoop";
@@ -13,7 +15,7 @@ import LogoLoop from "./LogoLoop";
 export default function MyTech() {
   const techLogos = [
     {
-      node: <SiReact className="text-sky-500 w-20 h-20" />, // 80px
+      node: <SiReact className="text-sky-500 w-20 h-20" />, 
       title: "React",
       href: "https://react.dev",
     },
@@ -46,6 +48,16 @@ export default function MyTech() {
       node: <FaJs className="text-yellow-500 w-20 h-20" />,
       title: "JavaScript",
       href: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    },
+    {
+      node: <SiPython className="text-blue-500 w-20 h-20" />,
+      title: "Python",
+      href: "https://www.python.org",
+    },
+    {
+      node: <SiFlask className="text-gray-800 w-20 h-20" />,
+      title: "Flask",
+      href: "https://flask.palletsprojects.com",
     },
   ];
 
